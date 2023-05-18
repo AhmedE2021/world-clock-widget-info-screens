@@ -1,8 +1,0 @@
-resources:
-  repositories:
-    - repository: templates
-      type: git
-      name: Colibo/Colibo.CommonWidgetBuildTemplates
-
-extends:
-  template: common.yml@templates
