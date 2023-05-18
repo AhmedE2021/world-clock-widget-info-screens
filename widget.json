@@ -1,0 +1,61 @@
+{
+  "name": "World Clock - Infoscreens",
+  "allowedLocationTypes": ["InfoScreen"],
+  "description": null,
+  "bundleUrl": "https://coliboassets.blob.core.windows.net/assets/widgets/colibo-infoscreens-world-clock-widget/__Build.BuildNumber__/colibo-infoscreens-world-clock-widget.element.js",
+  "legacyBundleUrl": "https://coliboassets.blob.core.windows.net/assets/widgets/colibo-infoscreens-world-clock-widget/__Build.BuildNumber__/colibo-infoscreens-world-clock-widget.element.es5.js",
+  "htmlElementName": "colibo-infoscreens-world-clock-widget",
+  "categories": {
+    "Other"
+  },
+  "exampleImages": [],
+  "posterImage": null,
+  "initialDisplayHeight": 97,
+  "requiresElevation": false,
+  "configurationDefinition": [
+    {
+      "defaultValue": [],
+      "description": "Add cities to display clocks",
+      "key": "cities",
+      "label": "Cities",
+      "type": "list",
+      "required": false,
+      "tab": "Content",
+      "allowedLocations": [],
+      "requires": null,
+      "requiresValue": null,
+      "itemDefinition": [
+        {
+          "defaultValue": "",
+          "description": "City name",
+          "key": "name",
+          "label": "City Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "defaultValue": "",
+          "description": "Country code",
+          "key": "countryCode",
+          "label": "Country Code",
+          "type": "string",
+          "required": true
+        },
+        {
+          "defaultValue": "",
+          "description": "Timezone",
+          "key": "timezone",
+          "label": "Timezone",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "customComponent": {
+        "component": "city-search",
+        "file": "city-search.js",
+        "bundleUrl": "https://coliboassets.blob.core.windows.net/assets/widgets/colibo-infoscreens-world-clock-widget/__Build.BuildNumber__/city-search.js",
+        "legacyBundleUrl": "https://coliboassets.blob.core.windows.net/assets/widgets/colibo-infoscreens-world-clock-widget/__Build.BuildNumber__/city-search.es5.js"
+      }
+    }
+  ]
+}

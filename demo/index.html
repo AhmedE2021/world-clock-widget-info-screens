@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        gap: 15px;
+      }
+      #main-widget {
+        flex: 75%;
+        box-shadow: 0 3px 10px #111;
+      }
+      #custom-component {
+        flex: 20%;
+        box-shadow: 0 3px 10px #111;
+      }
+    </style>
+  </head>
+  <body>
+    <colibo-infoscreens-world-clock-widget
+      id="main-widget"
+    ></colibo-infoscreens-world-clock-widget>
+    <city-search id="custom-component"></city-search>
+    <script>
+      document.querySelector(
+        "colibo-infoscreens-world-clock-widget"
+      ).configuration = {
+        forColiboInfoscreensWorldClockWidget: true,
+        cities: [
+          {
+            name: "Aarhus",
+            timezone: "Europe/Copenhagen",
+            countryCode: "DK",
+          },
+          { name: "New York", timezone: "America/New_York", countryCode: "US" },
+          { name: "Sydney", timezone: "Australia/Sydney", countryCode: "AU" },
+          { name: "Cairo", timezone: "Africa/Cairo", countryCode: "EG" },
+          { name: "Tokyo", timezone: "Asia/Tokyo", countryCode: "JP" },
+          { name: "Dubai", timezone: "Asia/Dubai", countryCode: "AE" },
+          { name: "Berlin", timezone: "Europe/Berlin", countryCode: "DE" },
+          {
+            name: "Amsterdam",
+            timezone: "Europe/Amsterdam",
+            countryCode: "NL",
+          },
+        ],
+      };
+    </script>
+  </body>
+</html>

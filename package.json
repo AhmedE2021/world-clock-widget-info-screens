@@ -1,0 +1,57 @@
+{
+    "name": "colibo-infoscreens-world-clock-widget",
+    "version": "1.0.1",
+    "license": "ISC",
+    "scripts": {
+        "start": "webpack-dev-server --config webpack.dev.config.js",
+        "build-es6": "webpack --config webpack.es6.config.js",
+        "build-es5": "webpack --config webpack.es5.config.js",
+        "build": "npm run build-es6 && npm run build-es5",
+        "clean": "rimraf build dist"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.20.2",
+        "@babel/plugin-transform-runtime": "^7.19.6",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/runtime": "^7.20.1",
+        "@types/leaflet": "^1.9.3",
+        "@typescript-eslint/eslint-plugin": "^5.43.0",
+        "@typescript-eslint/parser": "^5.43.0",
+        "autoprefixer": "^10.4.13",
+        "babel-loader": "^9.1.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "css-loader": "^6.7.2",
+        "file-loader": "^6.2.0",
+        "html-webpack-include-assets-plugin": "^2.0.0",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.6.1",
+        "postcss-loader": "^7.0.1",
+        "raw-loader": "^4.0.2",
+        "rimraf": "^3.0.2",
+        "sass-loader": "^13.2.0",
+        "svg-inline-loader": "^0.8.2",
+        "terser-webpack-plugin": "^5.3.6",
+        "ts-loader": "^9.4.1",
+        "typescript": "^4.9.3",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.13.3"
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "date-fns": "^2.29.3",
+        "date-fns-tz": "^2.0.0",
+        "iana-tz-data": "^2019.1.0",
+        "leaflet": "^1.9.3",
+        "leaflet-search": "^3.0.9",
+        "lit": "^2.7.2",
+        "svgo": "^3.0.2"
+    },
+    "browserslist": [
+        "last 2 version",
+        "> 1%",
+        "IE 10"
+    ]
+}
