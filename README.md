@@ -1,6 +1,6 @@
 # Introduction 
 
-This is the Colibo Widget Starter kit. Use this as base for building widgets
+This is the Colibo World clock widget
 
 # Getting Started
 
