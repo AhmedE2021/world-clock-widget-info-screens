@@ -1,6 +1,6 @@
 # Introduction 
 
-This is the Colibo World clock widget
+This is the World clock widget
 
 # Getting Started
 
